@@ -1,0 +1,8 @@
+{% include 'base.html.twig' %}
+
+{% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+        <h2>Test isGranted</h2>
+    {% endif %}
+    <h1>This is Admin Dashboard</h1>
+{% endblock %}
